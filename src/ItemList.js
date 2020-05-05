@@ -1,32 +1,27 @@
 import React from 'react';
 import Item from './Item';
 import './ItemList.css';
+import data from './data.json';
 
 function ItemList() {
+    const spaces = data.map(( { id, caption, subcaption, image, hours } ) => {
+        
+        return (
+            <Item 
+                key={id}
+                caption={caption}
+                subcaption={subcaption}
+                image={image}
+                hours={hours}
+            />
+        )
+    })
     return (
         <div className="ItemList">
-            <Item 
-                caption="HI"
-                subcaption="itme!"
-                image="rockfact.jpeg"
-            />
-            <Item 
-                caption="HELLO"
-                subcaption="itmetoo!"
-                image="rockfact.jpeg"
-            />
-            <Item 
-                caption="HEY"
-                subcaption="itmealso!"
-                image="rockfact.jpeg"
-            />
-             <Item 
-                caption="HI THERE"
-                subcaption="itmeaswell!"
-                image="rockfact.jpeg"
-            />
+            { spaces }
         </div>
     )
 }
+
 
 export default ItemList
