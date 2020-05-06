@@ -4,11 +4,11 @@ import './ItemList.css';
 import data from './data.json';
 
 function ItemList() {
-    const spaces = data.map(( { id, caption, subcaption, image, hours } ) => {
+    const spaces = data.map(( { caption, subcaption, image, hours }, i ) => {
         
         return (
             <Item 
-                key={id}
+                id={i}
                 caption={caption}
                 subcaption={subcaption}
                 image={image}
