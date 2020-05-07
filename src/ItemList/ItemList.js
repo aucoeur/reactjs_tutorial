@@ -1,7 +1,7 @@
 import React from 'react';
-import Item from './Item';
+import Item from '../Item/Item';
 import './ItemList.css';
-import data from './data.json';
+import data from '../data.json';
 
 function ItemList() {
     const spaces = data.map(( { caption, subcaption, image, hours }, i ) => {

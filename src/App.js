@@ -2,11 +2,11 @@ import React from 'react';
 import { HashRouter as Router, Route } from 'react-router-dom';
 
 import './App.css';
-import About from './About';
-import Title from './Title';
-import ItemList from './ItemList';
-import Footer from './Footer';
-import ItemDetails from './ItemDetails';
+import About from './About/About';
+import Title from './Title/Title';
+import ItemList from './ItemList/ItemList';
+import Footer from './Footer/Footer';
+import ItemDetails from './ItemDetails/ItemDetails';
 
 function App() {
   return (

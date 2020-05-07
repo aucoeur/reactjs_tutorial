@@ -1,5 +1,5 @@
 import React from 'react';
-import data from './data.json';
+import data from '../data.json';
 
 function ItemDetails(props) {
     const { id } = props.match.params 
